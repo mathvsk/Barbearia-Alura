@@ -1,2 +1,2 @@
 # Barbearia Alura
- Parte 1 do curso de Html e Css do curso da Alura
+ Site criado na parte 1 do curso de HTML e CSS na Alura
