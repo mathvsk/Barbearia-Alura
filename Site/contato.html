@@ -22,8 +22,18 @@
     </header>
 
 <main>
+
+    <!-- FORM = Utilizado para criar um formulario em HTML -->
     <form>
+
+        <!-- LABEL = É uma etiqueta para a entrada de dados, para o <input>
+        FOR = O valor colocado entre "" é referente ao <input>(Isso serve para voce nao precisar clicar diretamente na caixa de input para começar a digitar) -->
         <label for="nomesobrenome">Nome e Sobrenome</label>
+
+        <!-- INPUT = Tag usada para "pedir" dados do user
+             TYPE = Tipo da tag
+             REQUIRED = Campo Obrigatório
+             PLACEHOLDER = Aquele texto que aparece na caixa no input que some quando digitamos algo -->
         <input type="text" id="nomesobrenome"  class="input-padrao" required >
 
         <label for="email">Email</label>
@@ -32,12 +42,18 @@
         <label for="telefone">Telefone</label>
         <input type="tel" id="telefone"  class="input-padrao" required placeholder="(XX) 9 XXXX-XXXX">
 
+        <!-- TEXTAREA = Caixa de texto -->
         <label for="mensagem">Mensagem</label>
         <textarea name="" id="mensagem" cols="30" rows="10"  class="input-padrao" required></textarea>
 
+        <!-- FIELDSET = É como se fosse uma <div>, porem dentro do formulario usamos fieldset para substitui-la -->
         <fieldset>
+
+            <!-- LEGEND = Como se fosse um <p>, mas o jeito semanticamente correto dentro de um formulário é usar o Legend para substituir o <p> -->
             <legend>Escolha a opção de contato</legend>
             
+            <!-- NAME = Faz com que as tags com o mesmo <name>, façam parte do mesmo grupo(possibilitando a marcação de apenas um radio bottom no site) 
+                 CHECKED = A tag que estiver com essa opção, sempre estara marcada no site -->
             <label for="radio-email"><input type="radio" name="contato"value="email" id="radio-email" checked> Email</label>
             
             <label for="radio-telefone"><input type="radio" name="contato"value="telefone" id="radio-telefone">Telefone</label>
@@ -47,6 +63,8 @@
 
         <fieldset>
             <legend>Qual horário prefere ser atendido?</legend>
+
+            <!-- SELECT = Uma caixinha onde tem varias opções de conteudo selecionaveis-->
             <select>
                 <option>Manhã</option>
                 <option>Tarde</option>
@@ -56,17 +74,24 @@
 
         <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades pelo email?</input></label>
 
-
         <input type="submit" value="Enviar Formulário" class="enviar">
     </form>
 
+    <!-- TABLE = Uma tabela com linhas e colunas no HTML-->
     <table>
-        <thead> <!-- Tag usada para marcar o CABEÇALHO de uma tabela-->
+        <!-- THEAD = Usada para marcar o CABEÇALHO de uma tabela-->
+        <thead> 
+
+            <!-- TR = linha
+                 TH = Tag espeficica para marcar dentro do <thead> 
+                 TD = Célula da linha-->
             <tr>
                 <th>Dia</th>
                 <th>Horário</th>
             </tr>
-        </thead>        
+        </thead>
+        
+        <!-- TBODY = Usada para marcar o corpo de um table -->
         <tbody>
             <tr>
                 <td>Segunda</td>
@@ -83,6 +108,7 @@
             
         </tbody>
     </table>
+    
 </main>
 
 <footer>

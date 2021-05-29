@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Tag para identificar os caracteres utlizados em sites -->
+    <meta charset="UTF-8"> 
+
+    <!-- Ainda não sei -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Tag para a exibição em mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo da ABA do navegador -->
     <title>Barbearia Alura</title>
+
+    <!-- Importações feitas para o CSS;
+        1° Resetando todos os estilos pré definidos no navegador
+        2° Importando estilo externo no CSS
+        3° Importando fontes externas -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <!-- CLASS = Classes(Pode ser usado varias vezes em varias tags) com objetivo principal de STYLES
+         ID = Identificador(Usado uma unica vez) geralmente usado para ajudar no JS-->
 
+    <!-- HEADER = local onde é escrito o cabeçalho do Site -->
     <header>
+
+        <!--DIV = São "caixas" usadas para armazenar informações dentro delas(<p>, <ul>, etc...), facilita tambem para editar as dimensões da pagina(recomendavel sempre utlizar div, para alinhas algum video, foto, mapa...) -->
         <div class="caixa">
             <h1><img src="imagens/logo.png" alt="logo-alura"></h1>
 
+            <!-- NAV = Usado para definir a parte de Navegação do seu site(Home, Produtos, Contato, etc...) -->
             <nav>
+
+                <!-- UL = Lista não ordenada -->
                 <ul>
+
+                    <!-- LI = Itens da lista 
+                    A = Adicionando algum site-->
                     <li><a href="index.html" target="_blank">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -29,9 +51,13 @@
 
     </header>
 
+    <!-- Tag para importar um Imagem -->
     <img class="banner" src="imagens/banner.jpg" alt="barbearia">
 
+    <!-- MAIN = Local onde fica localizado o restante do site(textos, artigos, pesquisas, etc...) -->
     <main>
+
+        <!-- SECTION = Um bloco/Seção para assuntos "Especificos/Genéricos"(Assuntos que tem relação consigo mesmos)-->
         <section class="principal">
 
             <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
@@ -52,7 +78,11 @@
 
             <p>Nosso estabeleciomento, esta localizado no coração da cidade</p>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58511.03142231461!2d-46.63018506912153!3d-23.57061755675728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1622074087778!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="mapa-conteudo">
+
+                <!-- IFRAME = Tag para importar de algum site, por exemplo(Videos, mapas, tudo que tenha um inframe)-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58511.03142231461!2d-46.63018506912153!3d-23.57061755675728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1622074087778!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
 
         </section>
 
@@ -68,19 +98,23 @@
                     <li class="itens">Profissionais Qualificados</li>
                     <li class="itens">Pontualidade</li>
                     <li class="itens">Limpeza</li>
-                </ul><img src="imagens/beneficios.jpg" alt="beneficios" class="imagem-beneficios">
+
+                <!--Colocar duas tags uma após a outra, para não conflitar(quebrar linhas...) na hora do alinhamento do site -->
+                </ul><img src="imagens/beneficios.jpg" alt="beneficios" class="imagem-beneficios"> 
             </div>
 
             <div class="video">
-                <iframe width="788" height="443" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </section>
 
     </main>
 
+<!-- FOOTER = Local para criar o rodapé do site -->
 <footer>
     <img src="imagens/logo-branco.png" alt="">
     <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+</footer>
 </body>
 </html>
