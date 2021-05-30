@@ -1,38 +1,51 @@
+/* # = ID
+   . = CLASS */
+
+/* Definindo a fonte patrão do conteudo escrito no body */ 
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
     background-color: rgba(128, 128, 128, 0.685);
-    padding: 20px 0;
+    /* PADDING = Margem interna do elemento */
+    padding: 20px 0; 
 }
 
 .caixa {
+    /* WIDTH = Largura do objeto */
     width: 940px;
+    /* POSITION = define duas coisas: como o elemento se comporta em relação aos seus ancestrais na hierarquia, e como seus descendentes poderão se comportar em relação a ele. */
     position: relative;
+    /* MARGIN = Margem externa do elemento*/
     margin: 0 auto;
 
 }
 nav {
-    position: absolute; /*Codigo para mudar o ponto INICIAL de uma marcação*/
+    position: absolute;
     top: 125px;
     right: 0;
 
 }
 nav  li {
-    display: inline; /* inline = liberado para deslocamento lateral*/
+    /* inline = liberado para deslocamento lateral*/
+    display: inline; 
     margin-left: 15px;
 }
 
 nav a {
-    text-transform: uppercase; /* Transformando as letras em MAISCULA */
+    /* Transformando as letras em MAISCULA */
+    text-transform: uppercase; 
     color: black;
-    font-weight: bold; /* Deixando em NEGRITO */
+    /* Deixando em NEGRITO */
+    font-weight: bold; 
     font-size: 22px;
-    text-decoration: none; /* Mexendo no Sublinhado */
+    /* Mexendo no Sublinhado */
+    text-decoration: none; 
 }
 
-nav a:hover {
+/* Pseudo class HOVER = Quando passar o mouse por cima da marcação do HTML */
+nav a:hover { 
     color: brown;
     text-decoration: underline;
 }
@@ -43,13 +56,16 @@ nav a:hover {
     padding: 50px 0;
 }
 .produtos li {
-    display: inline-block; /* inline-block = Posso mexer no elemento completo (altura, largura, etc...( */
+    /* inline-block = Posso mexer no elemento completo (altura, largura, etc...( */
+    display: inline-block; 
     text-align: center;
     width: 30%;
+    /* VERTICAL-ALIGN = Coloca o ponto de referencia do conteudo, na parte do topo */
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
-    box-sizing: border-box; /* Os PX são inclusos na (% - Porcentagem) do site, se não usar esse comando, os PX e a % serão Somados. */
+    /* Os PX são inclusos na (% - Porcentagem) do site, se não usar esse comando, os PX e a % serão Somados. */
+    box-sizing: border-box; 
     border:2px solid black;
     border-radius: 10px;
 }
@@ -61,6 +77,7 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Active = Quando clicar em algo */
 .produtos li:active {
     border-color: chocolate;
 }
@@ -91,9 +108,6 @@ footer {
     padding-top: 20px;
 }
 
-main {
-
-}
 
 form  {
     margin: 40px 0;
@@ -133,7 +147,9 @@ form label, form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 1s all; /* Delay na hora de mudar a cor do elemento */
+    /* Delay na hora de mudar a cor do elemento */
+    transition: 1s all;
+    /* Mudando cursor para mãozinha */
     cursor: pointer;
 }
 
@@ -166,11 +182,11 @@ td, th {
     text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
-    clear: left; /* limpa  a  formataçao q a tag float impoem depoiis da img */
+    clear: left; /* limpa  a  formataçao q a tag float impoem depois da img */
 }
 
 .principal {
-    padding: 3en 0;
+    padding: 3em 0;
     background: #FEFEFE;
     width: 940px;
     margin: 0 auto;
@@ -219,13 +235,17 @@ td, th {
 }
 
 .itens {
-    line-height: 1.5; /*Altura da linha */
+    /*Altura da linha */
+    line-height: 1.5; 
 }
 
-.itens:first-child { /*Colocando o primeiro FILHO/ITEM em negrito com a class pseudo elemnt */
+/*Colocando o primeiro FILHO/ITEM em negrito com a class pseudo element */
+.itens:first-child { 
     font-weight: bold;
 }
 
+/* pseudo class BEFORE = TUDO Antes do texto
+   pseudo class AFTER = TUDO depois do texto*/
 .itens::before {
     content: "\1F7CA";
 }
@@ -252,6 +272,7 @@ td, th {
     margin: 2em auto;
 }
 
+/* Método para estilizar em tablets/celulares etc... (vai ter que adaptar tudo para esses dispositivos a partir daqui)*/
 @media screen and (max-width: 480px){
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;

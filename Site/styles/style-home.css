@@ -1,8 +1,16 @@
-#banner {
+/*   */
+#banner { 
+
+    /*  */
+
     width: 100%;
 }
 
 .principal {
+
+    /* BACKGROUND-COLOR = Cor de fundo do elemento 
+       
+
     background-color: grey;
     padding: 20px;
 }
@@ -12,6 +20,9 @@
 }
 
 .titulo-centralizado {
+
+    /* TEXT-ALLIGN = Alinhamento de texto */
+
     text-align: center;
 }
 
@@ -20,14 +31,22 @@ p {
 }
 
 #missao {
+
+    /* FONT-SIZE = Tamanho da fonte */
+
     font-size: 20px;
 }
 
+/* Meio de identificar o filho STRONG da tag EM */
 em > strong {
+
+    /* COLOR = Mudar a cor */
     color: rgb(117, 0, 0);
 }
 
 .itens {
+
+    /* FONT-STYLE = Estilo de font */
     font-style: italic;
 }
 
@@ -37,13 +56,20 @@ em > strong {
 }
 
 ul {
+
+    /* DISPLAY INLINE/INLINE-BLOCK = Mudando para inline ou inline block voce pode colocar coisas lado a lado.
+       DISPLAY BLOCK = Ocupado a linha inteira do site 
+       VERTICAL-ALIGN = Coloca o ponto de referencia do conteudo, na parte do topo*/ 
+
     display: inline-block;
-    vertical-align: top; /* Código usado para alinhar o conteudo a partir do TOPO */   
+    vertical-align: top; 
     width: 20%; 
     margin-right: 15%;
 }
 
 .imagem {
+
+    /* HEIGHT = Altura do elemento */
     width: 50%;
     height: 50%;
 
